@@ -1,0 +1,35 @@
+:root {
+ --white: #fff;
+ --light-blue: #187ddb;
+ --dark-grey: #221f1d;
+ --border-radius: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background: var(--light-blue);
+    color: var(--white);
+}
+
+.topnav  {
+    display: flex;
+    background-color: var(--dark-grey);
+}
+
+.topnav a {
+    color: var(--dark-blue);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.topnav a:hover {
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
