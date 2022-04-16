@@ -1,7 +1,7 @@
 :root {
  --white: #fff;
- --light-blue: #187ddb;
- --dark-grey: #221f1d;
+ --pink: #db1883;
+ --egg-shell: #fafafa;
  --border-radius: 50px;
 }
 
@@ -13,23 +13,77 @@ h1 {
 header {
     padding: 40px;
     text-align: center;
-    background: var(--light-blue);
+    background: var(--pink);
     color: var(--white);
 }
 
-.topnav  {
-    display: flex;
-    background-color: var(--dark-grey);
+.fa {
+    display:inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering:auto;
+    -webkit-font-smoothing: antialiased
 }
 
-.topnav a {
+.fa-fa-linkedin-square:before {
+    content: "\f08c";
+   
+}
+
+
+nav  {
+    display: flex;
+    background-color: var(--egg-shell);
+}
+
+nav a {
     color: var(--dark-blue);
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
 }
 
-.topnav a:hover {
+nav a:hover {
     background-color: var(--white);
     color: var(--dark-blue);
 }
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.about-me {
+    float: left;
+    padding: 50px;
+    height: 300px;
+    background-color: #db1883;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+    
