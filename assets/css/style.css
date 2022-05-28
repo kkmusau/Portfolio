@@ -63,36 +63,47 @@ nav a:hover {
     margin-left: 25px;
 }
 
-.container {
-    display: inline-flex;
+.aboutMe {
+    display: flex;
     justify-content: space-between;
+    height: 40vh;
+    padding: 20px;
+}
+
+.aboutMe p {
+    width: 70%;
+    margin-left: 10%;
+}
+
+.bg-color1 {
+    width: 590px;
+    height: 200px;
+    background: linear-gradient(35deg,gray,rgb(239, 97, 9));
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    left: 191px;
+    top: -54px;
+}
+.bg-color2 {
+    width: 590px;
+    height: 200px;
+    background: linear-gradient(35deg,rgb(242, 8, 8),rgb(134, 57, 9));
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    left: 191px;
+    top: -200px;
+}
+
+.aboutMe img {
+    position: relative;
+    z-index: 2;
+}
+.container {
     width: 95%;
     margin: auto;
 } 
-
-.col1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 15%;  
-}
-
-
-.col2 {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-}
-
-.col2>div {
-    border-left: 10px solid rgb(186, 216, 213);
-    margin-bottom: 20px;
-    padding-left: 40px;  
-}
-
-.col2 img {
-    float: left;
-}
 
 .work {
     display: flex;
