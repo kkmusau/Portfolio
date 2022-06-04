@@ -1,20 +1,22 @@
 :root {
- --white: rgb(248, 238, 243);
- --dark-blue: #0c0b0c;
- --sea-blue: #b1dbd6;
- font-family: Arial, Helvetica, sans-serif;
+    --white: rgb(248, 238, 243);
+    --dark-blue: #0c0b0c;
+    --cream: #f6faf9;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-body{
-    background-color:white
+body {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0 10px 10%;
 }
 
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
-.h2{
+.h2 {
     font-size: 2.4em;
     margin-bottom: 10px;
 }
@@ -26,18 +28,18 @@ h1 {
     height: fit-content;
 }
 
-nav  {
+nav {
     display: flex;
-    background-color: var(--sea-blue);
+    background-color: var(--cream);
     justify-content: space-between;
-    padding: 20px;      
+    padding: 20px;
 }
 
 
 nav h1 {
     margin: 0;
     padding: 5px;
-    color:#172f42;
+    color: #172f42;
     border-radius: 8px;
 }
 
@@ -53,6 +55,11 @@ nav a:hover {
     color: var(--dark-blue);
 }
 
+.navimage {
+    background-image: url(/assets/images/backgroundimage.jpg);
+    background-size: cover;
+}
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -66,8 +73,13 @@ nav a:hover {
 .aboutMe {
     display: flex;
     justify-content: space-between;
+    text-align: left;
     height: 40vh;
     padding: 20px;
+    border-bottom: 10px solid rgb(0, 166, 255);
+    border-right: 10px solid var(--dark-blue);
+    width: 90%;
+    margin-bottom: 20px;
 }
 
 .aboutMe p {
@@ -78,17 +90,18 @@ nav a:hover {
 .bg-color1 {
     width: 590px;
     height: 200px;
-    background: linear-gradient(35deg,gray,rgb(239, 97, 9));
+    background: linear-gradient(35deg, gray, rgb(70, 203, 174));
     border-radius: 50%;
     position: relative;
     z-index: 1;
     left: 191px;
     top: -54px;
 }
+
 .bg-color2 {
     width: 590px;
     height: 200px;
-    background: linear-gradient(35deg,rgb(242, 8, 8),rgb(134, 57, 9));
+    background: linear-gradient(35deg, rgb(24, 63, 236), rgb(134, 57, 9));
     border-radius: 50%;
     position: relative;
     z-index: 1;
@@ -99,16 +112,25 @@ nav a:hover {
 .aboutMe img {
     position: relative;
     z-index: 2;
+    clip-path: circle(100px at center);
+    width: 200px;
+    height: 200px;
+    margin-right: 3rem;
 }
+
 .container {
     width: 95%;
     margin: auto;
-} 
+}
+
 
 .work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;   
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 20px;
+    
 }
 
 .apps {
@@ -120,35 +142,70 @@ nav a:hover {
     position: absolute;
     left: 5px;
     top: 50%;
-    background: rgb(226, 196, 161);
+    background: rgb(85, 166, 210);
     padding: 10px;
-    border: 3px solid rgb(236, 229, 229);
+    border: 3px solid rgb(238, 233, 233);
     border-radius: 8px;
+}
+
+.appComment {
+    font-weight: bold;
+    color: #f6faf9;
 }
 
 .apps:first-child {
     width: 100%;
-    height: 30vh;
+    height: 400px;
     overflow: hidden;
 }
+
 .apps:first-child img {
     width: 100%;
-    height: 30vh;
+    height: 400px;
     overflow: hidden;
+    background-image: url(/assets/images/Safe\ Haven\ Bathrooms.png);
+    background-size: cover;
+    margin-bottom: 10px;
 }
 
+.appsPortfolio {
+    position: relative;
+    margin: 5px;
 
-@media screen and (max-width: 992px){
+}
+
+.contactMe {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 10px solid rgb(0, 166, 255);
+    border-right: 10px solid var(--dark-blue);
+    width: 90%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 10px;
+}
+
+footer h4 {
+    color: #0c0b0c;
+    font-size: .75em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 992px) {
     section {
         width: 45%;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     section {
         width: 90%;
         flex-direction: column;
     }
 }
-
-
