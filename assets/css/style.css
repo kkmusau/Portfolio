@@ -6,10 +6,16 @@
     box-sizing: border-box;
 }
 
+* {
+    /* border: 2px dotted red; */
+}
+
 body {
     background-color: rgb(255, 255, 255);
     background-image: url('../images/backgroundimage.jpg');
-    padding: 10px 0 10px 10%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -89,6 +95,10 @@ nav a:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+.pic {
+    position: relative;
+}
+
 .bg-color1 {
     width: 216px;
     height: 209px;
@@ -97,7 +107,7 @@ nav a:hover {
     position: absolute;
     z-index: 1;
     left: 25px;
-    top: 56px;
+    bottom: 70px;
 }
 
 .bg-color2 {
@@ -108,7 +118,7 @@ nav a:hover {
     position: absolute;
     z-index: 1;
     left: 0;
-    top: 150px;
+    top: 75px;
 }
 
 .aboutMe img {
@@ -220,8 +230,42 @@ footer h4 {
 }
 
 @media screen and (max-width: 768px) {
+    
+    .aboutMe {
+        flex-direction: column;
+        border: none;
+    }
+
+    .aboutMe p {
+        width: 100%;
+        margin: 10px auto;
+        
+    }
+    
+    #aboutme {
+        margin: 50px auto 20px;
+    }
     section {
         width: 90%;
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+        
+        height: 10vh;
+    }
+
+    .apps {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .contactMe {
+        width: 75%;
+        padding: 10px;
+        margin: 0 auto;
+        border: none;
+        background: transparent;
         flex-direction: column;
     }
 }
